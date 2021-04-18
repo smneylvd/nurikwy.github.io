@@ -1,21 +1,19 @@
-body {
-	height: 1000px;
-	width: 610px;
-}
 div {
 	height: 200px;
 	width: 200px;
-	position: relative;
+	/*margin: 1px;*/
+	position: absolute;
 }
 .red {
 	background-color: red;
-	float: right;
+	top: 408px;
+	left: 408px;
 }
 .blue {
 	background-color: blue;
-	float: left;
+	top: 208px;
+	left: 208px;
 }
 .green {
 	background-color: green;
-	float: right;
 }
