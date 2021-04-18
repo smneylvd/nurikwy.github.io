@@ -65,36 +65,39 @@
 			
 			<form name="some-useless-form">
 
-				<label for="message">Send me a message</label>
-				<input type="text" name="message" placeholder="dark-blue">
-				<input type="button" name="message" value="submit">
+				<div class="form-group">
+					<label for="message">Send me a message</label>
+					<input type="text" name="message" placeholder="dark-blue">
+					<input type="button" name="message" value="submit">
+				</div>
 
-				<br>
-				<br>
-				
-				<label for="message">Choose a date</label>
-				<input type="date" value="9999-08-03">
-				
-				<br>
-				<br>
+				<div class="form-group">
+					<label for="message">Choose a date</label>
+					<input type="date" value="9999-08-03">
+				</div>
 
-				<label>Gender</label>
 
-				<br>
 
-				<label>Male</label>
-				<input type="radio" name="gender" checked="true">
-				<label>Female</label>
-				<input type="radio" name="gender">
+				<div class="form-group">
+					
+					<label>Gender</label>
+					<br>
+					<label>Male</label>
+					<input type="radio" name="gender" checked="true">
+					<label>Female</label>
+					<input type="radio" name="gender">
+				</div>
+
+
+				<div class="form-group">
+					<label for="ImportantQuestion">Are you Adik?</label>
+					<input id="ImportantQuestion" name="ImportantQuestion" type="checkbox" checked="true" onchange="
+					if(document.getElementById('ImportantQuestion').checked == 0)
+						alert('Bad for you')
+					">
+				</div>
 
 				<br><br>
-
-				<label for="ImportantQuestion">Are you Adik?</label>
-				<input id="ImportantQuestion" name="ImportantQuestion" type="checkbox" checked="true" onchange="
-				if(document.getElementById('ImportantQuestion').checked == 0)
-					alert('Bad for you')
-				">
-
 				<br><br>
 
 				<label for="upload">And of course if you have nothing to do, you can upload a png file</label>
@@ -126,11 +129,11 @@
 				<h3>List of Goals</h3>
 				<ul>
 
-					<li>Turn on computer &check;</li>
+					<li class="done">Turn on computer &check;</li>
 
-					<li>Open Sublime text 3 &check;</li>
+					<li class="done">Open Sublime text 3 &check;</li>
 
-					<li>Sit in front of the computer in the middle of the night &check;</li>
+					<li class="done">Sit in front of the computer in the middle of the night &check;</li>
 
 				</ul>
 			</li>
@@ -139,11 +142,11 @@
 				<h3>List of Goals</h3>
 				<ul>
 
-					<li>Turn on computer &check;</li>
+					<li class="done">Turn on computer &check;</li>
 
-					<li>Open Sublime text 3 &check;</li>
+					<li class="done">Open Sublime text 3 &check;</li>
 
-					<li>Sit in front of the computer in the middle of the night &check;</li>
+					<li class="done">Sit in front of the computer in the middle of the night &check;</li>
 
 				</ul>
 			</li>
@@ -151,11 +154,11 @@
 				<h3>List of last goals</h3>
 				<ul>
 
-					<li>Copy paste list of goals 3 times &check;</li>
+					<li class="done">Copy paste list of goals 3 times &check;</li>
 
-					<li>Make a little change in the last one &check;</li>
+					<li class="done">Make a little change in the last one &check;</li>
 
-					<li>Finally end up doing homework &#10007;</li>
+					<li class="undone">Finally end up doing homework &#10007;</li>
 
 				</ul>
 			</li>
@@ -166,7 +169,7 @@
 
 		<h4>Some elements that have been used in the code above</h4>
 
-		<div style="background-color: gray; border-radius: 10px; padding: 20px; color: white">
+		<div id="code">
 
 			<code>
 				&#x3C;code&#x3E;&#x3C;/code&#x3E;<br>
@@ -178,37 +181,38 @@
 
 		</div>
 
-		<hr>
+		<hr size=1>
 
-		<p>Would you like to rate my website from "Awful" to "Awesome": </p>
-		<select id="rate">
+		<div class="rate">
+			<p>Would you like to rate my website from "Awful" to "Awesome": </p>
+			<select id="rate">
 
-			<option value="Awful">Awful</option>
-			<option value="Bad">Bad</option>
-			<option value="Soidet">Soidet</option>
-			<option value="Good">Good</option>
-			<option value="Awesome" selected="selected">Awesome</option>
+				<option value="Awful">Awful</option>
+				<option value="Bad">Bad</option>
+				<option value="Soidet">Soidet</option>
+				<option value="Good">Good</option>
+				<option value="Awesome" selected="selected">Awesome</option>
+			</select>
 
-		</select>
+			<h5>Here are some definitions for each grade</h5>
+			<dl>
+				<dt>Awful</dt>
+				<dd>very bad</dd>
 
-		<h5>Here are some definitions for each grade</h5>
-		<dl>
-			<dt>Awful</dt>
-			<dd>very bad</dd>
+				<dt>Bad</dt>
+				<dd>well it's bad</dd>
 
-			<dt>Bad</dt>
-			<dd>well it's bad</dd>
+				<dt>Soidet</dt>
+				<dd>nu che tut, soidet tak soidet</dd>
 
-			<dt>Soidet</dt>
-			<dd>nu che tut, soidet tak soidet</dd>
+				<dt>Good</dt>
+				<dd>lutche chem soidet</dd>
 
-			<dt>Good</dt>
-			<dd>lutche chem soidet</dd>
+				<dt><big>Awesome</big></dt>
+				<dd><big>Wery good</big></dd>
+			</dl>
+		</div>
 
-			<dt><big>Awesome</big></dt>
-			<dd><big>Wery good</big></dd>
-		</dl>
-		
 		<br><br><br><br><br><br>
 		<img src="error/destination/.jpg" alt="This alt appears when the image is failed to load">
 		<textarea style="width: 310px; height: 560px">
