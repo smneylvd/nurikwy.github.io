@@ -105,7 +105,13 @@ input[type=text], input[type=date]{
 }
 
 audio {
-	
+	width: 90%;
+	height: 30px;
+}
+
+audio::-webkit-media-controls-panel{
+	background-color:#0808089e !important;
+
 }
 
 .form-group {
@@ -121,4 +127,10 @@ textarea {
 	border: none;
 	color: #a9a9a914;
 
+}
+
+.photo {
+	border-style: dashed;
+	border-color: #898181ba;
+	padding: 10px;
 }
