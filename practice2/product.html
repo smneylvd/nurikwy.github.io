@@ -7,6 +7,18 @@
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+		<script src="https://kit.fontawesome.com/6775ea104e.js" crossorigin="anonymous"></script>
+		<style>
+			.add-to-cart{
+				position: absolute;
+				top: 36%;
+				left: 45%;
+				font-size: 1.7em;
+			}
+			.add-to-cart > a:hover {
+				text-decoration: none;
+			}
+		</style>
 	</head>
 	<body>
 		<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
@@ -41,9 +53,9 @@
 			</ul>
 			<ul class="navbar-nav">
 				<li class="nav-item">
-					<button type="button" class="btn btn-sm btn-outline-info" data-toggle="modal" data-target="#myModal">
-						Sign in
-					</button>
+					<a class="nav-link btn" data-toggle="modal" data-target="#myModal">
+					<i class="fas fa-user"></i> Sign in
+					</a>
 				</li>
 			</ul>
 		</nav>
@@ -68,29 +80,26 @@
 				<div class="img-thumbnail p-3">
 					<div class="row">
 						<div class="col-sm-6">
-							<img class="img-fluid image" src="http://placehold.it/750x600" alt=""/>
+							<img class="img-fluid image" src="img/product.jpg" alt=""/>
 							<div class= "row pt-4">
-								<div class="col-sm-2 col-md-3">
-									<a href="#"><img src="http://placehold.it/750x600" alt="" class="img-thumbnail img-fluid"></a>
+								<div class="col-sm-2 col-md-4 d-none">
+									<a href="#"><img src="img/product_1.jpg" alt="" class="img-thumbnail img-fluid"></a>
 								</div>
-								<div class="col-sm-2 col-md-3">
-									<a href="#"><img src="http://placehold.it/750x600" alt="" class="img-thumbnail img-fluid" /></a>
+								<div class="col-sm-2 col-md-4">
+									<a href="#"><img src="img/product_2.jpg" alt="" class="img-thumbnail img-fluid" /></a>
 								</div>
-								<div class="col-sm-2 col-md-3">
-									<a href="#"><img src="http://placehold.it/750x600" alt="" class="img-thumbnail img-fluid" /></a>
+								<div class="col-sm-2 col-md-4">
+									<a href="#"><img src="img/product_3.png" alt="" class="img-thumbnail img-fluid" /></a>
 								</div>
-								<div class="col-sm-2 col-md-3">
-									<a href="#"><img src="http://placehold.it/750x600" alt="" class="img-thumbnail img-fluid" /></a>
+								<div class="col-sm-2 col-md-4">
+									<a href="#"><img src="img/product_4.png" alt="" class="img-thumbnail img-fluid" /></a>
 								</div>
 							</div>
 						</div>
 						<div class="col-md-6">
-							<h4 class="float-right">$24.99</h4>
-							<h4><a href="product.html">Product Name</a></h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing
-								elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-								aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-								laboris nisi ut aliquip ex ea commodo consequat.
+							<h4 class="float-right">$15,297.50</h4>
+							<h4><a href="product.html">iBuyPower sticker</a></h4>
+							<p>Taking the number one spot is, of course, the iBUYPOWER Holo. Given that most of the more expensive stickers have some kind of narrative associated with them, it’s no surprise that this one takes top honors.
 							</p>
 							<form role="form">
 								<div class="form-group input-group-sm d-flex">
@@ -123,54 +132,216 @@
 							</form>
 						</div>
 					</div>
-				</div>
-			</div>
-		</div>
-			<br>
-			<hr>
-			<div class="d-flex justify-content-center">
-				<p>@Copyright 2021 All rights reserved </p>
-			</div>
-			<div class="modal" id="myModal">
-				<div class="modal-dialog">
-					<div class="modal-content">
-						<!-- Modal Header -->
-						<div class="modal-header">
-							<h5 class="modal-title">Sign in</h5>
-							<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<br>
+					<div class="description">
+						<p>
+							Exclusively pulled from the more expensive EMS Katowice (2014) Challengers capsule, this sticker is mainly responsible for such a surge in the price of all the aforementioned Katowice (2014 stickers). If you’re looking to snag one, the capsule will set you back a good chunk of change. Or you could look to buy one outright, that’s if you’re lucky enough to spot one on the market…
+						</p>
+					</div>
+					<div class="ratings">
+						<p class="float-right">3 reviews</p>
+						<p>
+							<span class="far fa-star font-weight-bolder"></span>
+							<span class="far fa-star font-weight-bolder"></span>
+							<span class="far fa-star font-weight-bolder"></span>
+							<span class="far fa-star font-weight-bolder"></span>
+							<span class="far fa-star"></span>
+							4.0 stars
+						</p>
+					</div>
+					<br>
+					<div class="well bg-light rounded border pt-4 pb-4 pr-3">
+						<div class="d-flex justify-content-end ">
+							<a class="btn btn-success">Leave a Review</a>
 						</div>
-						<!-- Modal body -->
-						<div class="modal-body">
-							<form class="form-group p-3">
-								<div class="form-group">
-									<label for="exampleDropdownFormEmail1">Sign in with your Email address</label>
-									<input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="Email address">
-								</div>
-								<div class="form-group">
-									<input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
-								</div>
-								<div class="form-check">
-									<input type="checkbox" class="form-check-input" id="dropdownCheck">
-									<label class="form-check-label" for="dropdownCheck">
-										Remember me
-									</label>
-								</div>
+					</div>
+						<br><br>
+						<div class="row">
+							<div class="col-md-12">
+								David More
+								<span class="float-right">1 day ago</span>
 								<br>
-								<button type="submit" class="btn btn-lg btn-primary btn-block">Sign in</button>
-								<div class="row">
-									<div class="col-xs-3">
-										<a href="#" class="btn btn-facebook btn-large btn-caps btn-block">Facebook <span class="icon-facebook"></span></a>
-									</div>
-									<div class="col-xs-3">
-										<a href="#" class="btn btn-twitter btn-large btn-caps btn-block">Twitter <span class="icon-twitter"></span></a>
+								<span class="far fa-star font-weight-bolder"></span>
+								<span class="far fa-star font-weight-bolder"></span>
+								<span class="far fa-star font-weight-bolder"></span>
+								<span class="far fa-star font-weight-bolder"></span>
+								<span class="far fa-star font-weight-bolder"></span>
+								<p>From <em>United States</em></p>
+								<p>This product was great in terms of quality. I would definitely buy another!</p>
+							</div>
+						</div>
+					<hr>
+					<div class="row">
+						<div class="col-md-12">
+							John Doe
+							<span class="float-right">2 days ago</span>
+							<br>
+							<span class="far fa-star font-weight-bolder"></span>
+							<span class="far fa-star font-weight-bolder"></span>
+							<span class="far fa-star font-weight-bolder"></span>
+							<span class="far fa-star font-weight-bolder"></span>
+							<span class="far fa-star font-weight-bolder"></span>
+							<p>From <em>Australia</em></p>
+							<p>I've already ordered another one!</p>
+						</div>
+					</div>
+					<hr>
+					<div class="row">
+						<div class="col-md-12">
+							<strong>Adik Tazhi</strong>
+							<span class="float-right">2 minutes ago</span>
+							<br>
+							<span class="far fa-star"></span>
+							<span class="far fa-star"></span>
+							<span class="far fa-star"></span>
+							<span class="far fa-star"></span>
+							<span class="far fa-star"></span>
+							<p>From <em>Kazakhstan</em></p>
+							<p>Total miserable thing, regret that I bought that</p>
+						</div>
+					</div>
+					<br>
+					<hr>
+					<hr>
+					<div class="row">
+						<div class="col-md-12">
+							<h3> Other products you may want to buy </h3>
+						</div>
+						<div class="col-md-12">
+							<div class="row">
+								<div class="col-sm-6 col-md-4 mb-4">
+									<div class="img-thumbnail">
+										<img src="img/other1.jpg" class="w-100" alt="">
+										<div class="add-to-cart">
+											<a href="#" class="fas fa-plus-circle"
+											data-toggle="tooltip" data-placement="top" title="Add to cart"></a>
+										</div>
+										<div class="caption p-3">
+											<h5 class="float-right">$98.99</h5>
+											<h5><a href="product.html">Carambit Fade</a>
+											</h5>
+											<p>This is a short description. Lorem ipsum dolor sit</p>
+											<div class="ratings">
+												<p class="float-right"><a href="product.
+												html#comments">13 reviews</a></p>
+												<p>
+													<span class="far fa-star font-weight-bolder"></span>
+													<span class="far fa-star font-weight-bolder"></span>
+													<span class="far fa-star font-weight-bolder"></span>
+													<span class="far fa-star font-weight-bolder"></span>
+													<span class="far fa-star"></span>
+												</p>
+											</div>
+										</div>
 									</div>
 								</div>
-							</form>
+								<div class="col-sm-6 col-md-4 mb-4">
+									<div class="img-thumbnail">
+										<img src="img/other2.jpg" class="w-100" alt="">
+										<div class="add-to-cart">
+											<a href="#" class="fas fa-plus-circle"
+											data-toggle="tooltip" data-placement="top" title="Add to cart"></a>
+										</div>
+										<div class="caption p-3">
+											<h5 class="float-right">$45.99</h5>
+											<h5><a href="product.html">Bayonet Crimson web</a>
+											</h5>
+											<p>This is a short description</p>
+											<div class="ratings">
+												<p class="float-right"><a href="product.
+												html#comments">12 reviews</a></p>
+												<p>
+													<span class="far fa-star font-weight-bolder"></span>
+													<span class="far fa-star font-weight-bolder"></span>
+													<span class="far fa-star font-weight-bolder"></span>
+													<span class="far fa-star font-weight-bolder"></span>
+													<span class="far fa-star font-weight-bolder"></span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-4 mb-4">
+									<div class="img-thumbnail">
+										<img src="img/other3.jpg" class="w-100" alt="">
+										<div class="add-to-cart">
+											<a href="#" class="fas fa-plus-circle"
+											data-toggle="tooltip" data-placement="top" title="Add to cart"></a>
+										</div>
+										<div class="caption p-3">
+											<h5 class="float-right">$24.99</h5>
+											<h5><a href="product.html">Knife Butterfly</a>
+											</h5>
+											<p>This is a short description. Lorem ipsum dolor sit</p>
+											<div class="ratings">
+												<p class="float-right"><a href="product.
+												html#comments">14 reviews</a></p>
+												<p>
+													<span class="far fa-star font-weight-bolder"></span>
+													<span class="far fa-star font-weight-bolder"></span>
+													<span class="far fa-star font-weight-bolder"></span>
+													<span class="far fa-star"></span>
+													<span class="far fa-star"></span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+							</div>
 						</div>
 					</div>
 				</div>
+				<br>
 			</div>
 		</div>
-		<script src="https://kit.fontawesome.com/6775ea104e.js" crossorigin="anonymous"></script>
-		</body>
-	</html>
+	</div>
+</div>
+<br>
+<hr>
+<div class="d-flex justify-content-center">
+	<p>@Copyright 2021 All rights reserved </p>
+</div>
+<div class="modal" id="myModal">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<!-- Modal Header -->
+			<div class="modal-header">
+				<h5 class="modal-title">Sign in</h5>
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+			</div>
+			<!-- Modal body -->
+			<div class="modal-body">
+				<form class="form-group p-3">
+					<div class="form-group">
+						<label for="exampleDropdownFormEmail1">Sign in with your Email address</label>
+						<input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="Email address">
+					</div>
+					<div class="form-group">
+						<input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+					</div>
+					<div class="form-check">
+						<input type="checkbox" class="form-check-input" id="dropdownCheck">
+						<label class="form-check-label" for="dropdownCheck">
+							Remember me
+						</label>
+					</div>
+					<br>
+					<a href="account.html" class="btn btn-lg btn-primary btn-block">Sign in</a>
+					<div class="row">
+						<div class="col-xs-3">
+							<a href="#" class="btn btn-facebook btn-large btn-caps btn-block">Facebook <span class="icon-facebook"></span></a>
+						</div>
+						<div class="col-xs-3">
+							<a href="#" class="btn btn-twitter btn-large btn-caps btn-block">Twitter <span class="icon-twitter"></span></a>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<script src="https://kit.fontawesome.com/6775ea104e.js" crossorigin="anonymous"></script>
+</body>
+</html>

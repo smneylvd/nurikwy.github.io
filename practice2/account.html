@@ -3,12 +3,22 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>Account</title>
-
-
+		<title>E-commerce</title>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+		<script src="https://kit.fontawesome.com/6775ea104e.js" crossorigin="anonymous"></script>
+		<style>
+			.add-to-cart{
+				position: absolute;
+				top: 36%;
+				left: 45%;
+				font-size: 1.7em;
+			}
+			.add-to-cart > a:hover {
+				text-decoration: none;
+			}
+		</style>
 	</head>
 	<body>
 		<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
@@ -43,9 +53,9 @@
 			</ul>
 			<ul class="navbar-nav">
 				<li class="nav-item">
-					<button type="button" class="btn btn-sm btn-outline-info" data-toggle="modal" data-target="#myModal">
-					Sign in
-					</button>
+					<a class="nav-link btn" data-toggle="modal" data-target="#myModal">
+					<i class="fas fa-user"></i> %USERNAME%
+					</a>
 				</li>
 			</ul>
 		</nav>
@@ -68,10 +78,10 @@
 					<div class="img-thumbnail mb-3">
 						<div class="row">
 							<div class="col-sm-1">
-								<img class="img-fluid" src="http://placehold.it/750x600" alt="" />
+								<img class="img-fluid" src="img/trade1.jpg" alt="" />
 							</div>
 							<div class="col-sm-4">
-								<a href="product.html">Product Name</a>
+								<a href="product.html">"10 year" CS:GO medal | gift</a>
 							</div>
 							<div class="col-sm-1">
 								1
@@ -90,16 +100,16 @@
 					<div class="img-thumbnail mb-3">
 						<div class="row">
 							<div class="col-sm-1">
-								<img class="img-fluid" src="http://placehold.it/750x600" alt="" />
+								<img class="img-fluid" src="img/item1.jpg" alt="" />
 							</div>
 							<div class="col-sm-4">
-								<a href="product.html">Product Name</a>
+								<a href="product.html">AWP Asiimov | Factory new</a>
 							</div>
 							<div class="col-sm-1">
 								1
 							</div>
 							<div class="col-sm-2">
-								$49.99
+								$125.48
 							</div>
 							<div class="col-sm-2">
 								<button class="btn btn-sm btn-success border">Completed</button>
@@ -112,16 +122,16 @@
 					<div class="img-thumbnail mb-3">
 						<div class="row">
 							<div class="col-sm-1">
-								<img class="img-fluid" src="http://placehold.it/750x600" alt="" />
+								<img class="img-fluid" src="img/product.jpg" alt="" />
 							</div>
 							<div class="col-sm-4">
-								<a href="product.html">Product Name</a>
+								<a href="product.html">iBuyPower 2014 Katowice</a>
 							</div>
 							<div class="col-sm-1">
 								1
 							</div>
 							<div class="col-sm-2">
-								$49.99
+								$15,297.50
 							</div>
 							<div class="col-sm-2">
 								<button class="btn btn-sm btn-danger border">Cancelled</button>
@@ -134,16 +144,16 @@
 					<div class="img-thumbnail mb-3">
 						<div class="row">
 							<div class="col-sm-1">
-								<img class="img-fluid" src="http://placehold.it/750x600" alt="" />
+								<img class="img-fluid" src="img/item4.png" alt="" />
 							</div>
 							<div class="col-sm-4">
-								<a href="product.html">Product Name</a>
+								<a href="product.html">Glock-18 Water elemental</a>
 							</div>
 							<div class="col-sm-1">
 								1
 							</div>
 							<div class="col-sm-2">
-								$49.99
+								$10.70
 							</div>
 							<div class="col-sm-2">
 								<button class="btn btn-sm btn-default border">Track</button>
@@ -156,16 +166,16 @@
 					<div class="img-thumbnail mb-3">
 						<div class="row">
 							<div class="col-sm-1">
-								<img class="img-fluid" src="http://placehold.it/750x600" alt="" />
+								<img class="img-fluid" src="img/item.jpg" alt="" />
 							</div>
 							<div class="col-sm-4">
-								<a href="product.html">Product Name</a>
+								<a href="product.html">Deagle Darknight</a>
 							</div>
 							<div class="col-sm-1">
 								1
 							</div>
 							<div class="col-sm-2">
-								$49.99
+								$10.87
 							</div>
 							<div class="col-sm-2">
 								<button class="btn btn-sm btn-success border">Completed</button>
@@ -178,16 +188,16 @@
 					<div class="img-thumbnail mb-3">
 						<div class="row">
 							<div class="col-sm-1">
-								<img class="img-fluid" src="http://placehold.it/750x600" alt="" />
+								<img class="img-fluid" src="img/item4.png" alt="" />
 							</div>
 							<div class="col-sm-4">
-								<a href="product.html">Product Name</a>
+								<a href="product.html">Glock-18 Water elemental</a>
 							</div>
 							<div class="col-sm-1">
 								1
 							</div>
 							<div class="col-sm-2">
-								$49.99
+								$10.70
 							</div>
 							<div class="col-sm-2">
 								<button class="btn btn-sm btn-default border">Track</button>
@@ -200,25 +210,26 @@
 					<div class="img-thumbnail mb-3">
 						<div class="row">
 							<div class="col-sm-1">
-								<img class="img-fluid" src="http://placehold.it/750x600" alt="" />
+								<img class="img-fluid" src="img/item.jpg" alt="" />
 							</div>
 							<div class="col-sm-4">
-								<a href="product.html">Product Name</a>
+								<a href="product.html">Deagle Darknight</a>
 							</div>
 							<div class="col-sm-1">
 								1
 							</div>
 							<div class="col-sm-2">
-								$49.99
+								$10.87
 							</div>
 							<div class="col-sm-2">
-								<button class="btn btn-sm btn-default border">Track</button>
+								<button class="btn btn-sm btn-success border">Completed</button>
 							</div>
 							<div class="col-sm-2">
 								<a href="#">1 Message</a>
 							</div>
 						</div>
 					</div>
+					
 					<ul class="pagination justify-content-center">
 					  <li class="page-item"><a class="page-link" href="#">&#171;</a></li>
 					  <li class="page-item active"><a class="page-link" href="#">1</a></li>
