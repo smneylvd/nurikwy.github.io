@@ -2,6 +2,9 @@
 a:hover {
 	text-decoration: none;
 }
-product-photo {
-	height: 300px !important;
+.carousel-item > img {
+	position: relative;
+	/*bottom: 500px;*/
+	height: 500px;
+	width: 500px !important;
 }
