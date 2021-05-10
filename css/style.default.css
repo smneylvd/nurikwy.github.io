@@ -1181,8 +1181,25 @@ STYLE SWITCHER FOR DEMO
 * ========================================================
 *
 */
+
+  @media (min-width: 576px) {
+    
+  }
+
+  @media (min-width: 768px) {
+
+  }
+
+  @media (min-width: 992px) {
+  }
+
+  @media (min-width: 1200px) {
+
+  }
+
+
 .doctor:hover .doctor-overlay {
-  opacity: 1;
+  opacity: 0.5;
 }
 
 .doctor-overlay {
