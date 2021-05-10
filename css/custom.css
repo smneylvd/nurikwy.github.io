@@ -2,6 +2,8 @@
 a:hover {
 	text-decoration: none;
 }
-product-photo {
-	height: 300px !important;
+.carousel-item > img {
+	position: relative;
+	bottom: 500px;
+	size: 10%;
 }
