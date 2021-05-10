@@ -4,6 +4,7 @@ a:hover {
 }
 .carousel-item > img {
 	position: relative;
-	bottom: 500px;
-	size: 10%;
+	/*bottom: 500px;*/
+	height: 500px;
+	width: 500px !important;
 }
