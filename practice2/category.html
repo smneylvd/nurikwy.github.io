@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>E-commerce</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+		<script src="https://kit.fontawesome.com/6775ea104e.js" crossorigin="anonymous"></script>
+		<style>
+			.add-to-cart{
+				position: absolute;
+				top: 40%;
+				left: 45%;
+				font-size: 1.7em;
+			}
+			.add-to-cart > a:hover {
+				text-decoration: none;
+			}
+			.img-thumbnail > img {
+				height: 160px;
+			  	display: inline-block;
+			  	margin-left: auto;
+			  	margin-right: auto;
+			}
+		</style>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+			<!-- Links -->
+			<a class="navbar-brand" href="index.html">Bootstrap Store</a>
+			<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Categories
+					</a>
+					<ul class="dropdown-menu" role="menu">
+						<li><a class="dropdown-item" href="category.html">Apparel &amp; Accessories</a></li>
+						<li><a class="dropdown-item" href="category.html">Baby Products</a></li>
+						<li><a class="dropdown-item" href="category.html">Beauty &amp; Health</a></li>
+						<li><a class="dropdown-item" href="category.html">Electronics</a></li>
+						<li><a class="dropdown-item" href="category.html">Furniture</a></li>
+						<li><a class="dropdown-item" href="category.html">Home &amp; Garden</a></li>
+						<li><a class="dropdown-item" href="category.html">Luggage &amp; Bags</a></li>
+						<li><a class="dropdown-item" href="category.html">Shoes</a></li>
+						<li><a class="dropdown-item" href="category.html">Sports &amp;Entertainment</a></li>
+						<li><a class="dropdown-item" href="category.html">Watches</a></li>
+						<li class="dropdown-divider"></li>
+						<li><a class="dropdown-item" href="ecommerce.html">All Categories</a></li>
+					</ul>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Link</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Link</a>
+				</li>
+			</ul>
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link btn" data-toggle="modal" data-target="#myModal">
+					<i class="fas fa-user"></i> Sign in
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<br>
+		<div class="row container m-auto">
+			<div class="col-sm-4 col-md-3">
+				<h3>Categories</h3>
+				<div class="list-group">
+					<a href="category.html" class="list-group-item list-group-item-action">Apparel & Accessories</a>
+					<a href="category.html" class="list-group-item list-group-item-action">Baby Products</a>
+					<a href="category.html" class="list-group-item list-group-item-action">Beauty & Health</a>
+					<a href="category.html" class="list-group-item list-group-item-action">Electronics</a>
+					<a href="category.html" class="list-group-item list-group-item-action">Furniture</a>
+					<a href="category.html" class="list-group-item list-group-item-action">Home & Garden</a>
+					<a href="category.html" class="list-group-item list-group-item-action">Luggage & Bags</a>
+					<a href="category.html" class="list-group-item list-group-item-action">Shoes</a>
+					<a href="category.html" class="list-group-item list-group-item-action">Sports & Entertainment</a>
+					<a href="category.html" class="list-group-item list-group-item-action">Watches</a>
+				</div>
+			</div>
+			<div class="col-sm-8 col-md-9">
+				<div class="row">
+					<div class="col-sm-6 col-md-4 mb-4">
+						<div class="img-thumbnail overflow-hidden">
+							<img src="img/item1.png" class="img-fluid" alt="">
+							<div class="add-to-cart">
+								<a href="#" class="fas fa-plus-circle"
+								data-toggle="tooltip" data-placement="top" title="Add to cart"></a>
+							</div>
+							<div class="caption p-3">
+								<h5 class="float-right">$125.48</h5>
+								<h5><a href="product.html">AWP Asiimov</a>
+								</h5>
+								<p>This is a short description. Lorem ipsum dolor sit
+								amet, consectetur adipiscing elit.</p>
+								<div class="ratings">
+									<p class="float-right"><a href="product.
+									html#comments">15 reviews</a></p>
+									<p>
+										<span class="far fa-star font-weight-bolder"></span>
+										<span class="far fa-star font-weight-bolder"></span>
+										<span class="far fa-star font-weight-bolder"></span>
+										<span class="far fa-star font-weight-bolder"></span>
+										<span class="far fa-star font-weight-bolder"></span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4 mb-4">
+						<div class="img-thumbnail overflow-hidden">
+							<img src="img/item2.png" class="img-fluid" alt="">
+							<div class="add-to-cart">
+								<a href="#" class="fas fa-plus-circle"
+								data-toggle="tooltip" data-placement="top" title="Add to cart"></a>
+							</div>
+							<div class="caption p-3">
+								<h5 class="float-right">$19.47</h5>
+								<h5><a href="product.html">AK-47 Emerald</a>
+								</h5>
+								<p>This is a short description. Lorem ipsum dolor sit
+								amet, consectetur adipiscing elit.</p>
+								<div class="ratings">
+									<p class="float-right"><a href="product.
+									html#comments">15 reviews</a></p>
+									<p>
+										<span class="far fa-star font-weight-bolder"></span>
+										<span class="far fa-star font-weight-bolder"></span>
+										<span class="far fa-star font-weight-bolder"></span>
+										<span class="far fa-star font-weight-bolder"></span>
+										<span class="far fa-star font-weight-bolder"></span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4 mb-4">
+						<div class="img-thumbnail overflow-hidden">
+							<img src="img/item3.jpg" class="img-fluid" alt="">
+							<div class="add-to-cart">
+								<a href="#" class="fas fa-plus-circle"
+								data-toggle="tooltip" data-placement="top" title="Add to cart"></a>
+							</div>
+							<div class="caption p-3">
+								<h5 class="float-right">$624.11</h5>
+								<h5><a href="product.html">M4A4 Asiimov</a>
+								</h5>
+								<p>This is a short description. Lorem ipsum dolor sit
+								amet, consectetur adipiscing elit.</p>
+								<div class="ratings">
+									<p class="float-right"><a href="product.
+									html#comments">15 reviews</a></p>
+									<p>
+										<span class="far fa-star font-weight-bolder"></span>
+										<span class="far fa-star font-weight-bolder"></span>
+										<span class="far fa-star font-weight-bolder"></span>
+										<span class="far fa-star font-weight-bolder"></span>
+										<span class="far fa-star font-weight-bolder"></span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4 mb-4">
+						<div class="img-thumbnail overflow-hidden">
+							<img src="img/item4.png" class="img-fluid" alt="">
+							<div class="add-to-cart">
+								<a href="#" class="fas fa-plus-circle"
+								data-toggle="tooltip" data-placement="top" title="Add to cart"></a>
+							</div>
+							<div class="caption p-3">
+								<h5 class="float-right">$10.70</h5>
+								<h5><a href="product.html">Glock-18 Water</a>
+								</h5>
+								<p>This is a short description. Lorem ipsum dolor sit
+								amet, consectetur adipiscing elit.</p>
+								<div class="ratings">
+									<p class="float-right"><a href="product.
+									html#comments">15 reviews</a></p>
+									<p>
+										<span class="far fa-star font-weight-bolder"></span>
+										<span class="far fa-star font-weight-bolder"></span>
+										<span class="far fa-star font-weight-bolder"></span>
+										<span class="far fa-star font-weight-bolder"></span>
+										<span class="far fa-star font-weight-bolder"></span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4 mb-4">
+						<div class="img-thumbnail overflow-hidden">
+							<img src="img/item5.jpg" class="img-fluid" alt="">
+							<div class="add-to-cart">
+								<a href="#" class="fas fa-plus-circle"
+								data-toggle="tooltip" data-placement="top" title="Add to cart"></a>
+							</div>
+							<div class="caption p-3">
+								<h5 class="float-right">$66.09</h5>
+								<h5><a href="product.html">AWP Redline</a>
+								</h5>
+								<p>This is a short description. Lorem ipsum dolor sit
+								amet, consectetur adipiscing elit.</p>
+								<div class="ratings">
+									<p class="float-right"><a href="product.
+									html#comments">15 reviews</a></p>
+									<p>
+										<span class="far fa-star font-weight-bolder"></span>
+										<span class="far fa-star font-weight-bolder"></span>
+										<span class="far fa-star font-weight-bolder"></span>
+										<span class="far fa-star font-weight-bolder"></span>
+										<span class="far fa-star font-weight-bolder"></span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4 mb-4">
+						<div class="img-thumbnail overflow-hidden">
+							<img src="img/item6.png" class="img-fluid" alt="">
+							<div class="add-to-cart">
+								<a href="#" class="fas fa-plus-circle"
+								data-toggle="tooltip" data-placement="top" title="Add to cart"></a>
+							</div>
+							<div class="caption p-3">
+								<h5 class="float-right">$13.87</h5>
+								<h5><a href="product.html">M4A1-S Cyrex</a>
+								</h5>
+								<p>This is a short description. Lorem ipsum dolor sit
+								amet, consectetur adipiscing elit.</p>
+								<div class="ratings">
+									<p class="float-right"><a href="product.
+									html#comments">15 reviews</a></p>
+									<p>
+										<span class="far fa-star font-weight-bolder"></span>
+										<span class="far fa-star font-weight-bolder"></span>
+										<span class="far fa-star font-weight-bolder"></span>
+										<span class="far fa-star font-weight-bolder"></span>
+										<span class="far fa-star font-weight-bolder"></span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4 mb-4">
+						<div class="img-thumbnail overflow-hidden">
+							<img src="img/item.jpg" class="img-fluid" alt="">
+							<div class="add-to-cart">
+								<a href="#" class="fas fa-plus-circle"
+								data-toggle="tooltip" data-placement="top" title="Add to cart"></a>
+							</div>
+							<div class="caption p-3">
+								<h5 class="float-right">$10.87</h5>
+								<h5><a href="product.html">Some Deagle</a>
+								</h5>
+								<p>This is a short description. Lorem ipsum dolor sit
+								amet, consectetur adipiscing elit.</p>
+								<div class="ratings">
+									<p class="float-right"><a href="product.
+									html#comments">15 reviews</a></p>
+									<p>
+										<span class="far fa-star font-weight-bolder"></span>
+										<span class="far fa-star font-weight-bolder"></span>
+										<span class="far fa-star font-weight-bolder"></span>
+										<span class="far fa-star font-weight-bolder"></span>
+										<span class="far fa-star font-weight-bolder"></span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4 mb-4">
+						<div class="img-thumbnail overflow-hidden">
+							<img src="img/item.jpg" class="img-fluid" alt="">
+							<div class="add-to-cart">
+								<a href="#" class="fas fa-plus-circle"
+								data-toggle="tooltip" data-placement="top" title="Add to cart"></a>
+							</div>
+							<div class="caption p-3">
+								<h5 class="float-right">$10.87</h5>
+								<h5><a href="product.html">Some Deagle</a>
+								</h5>
+								<p>This is a short description. Lorem ipsum dolor sit
+								amet, consectetur adipiscing elit.</p>
+								<div class="ratings">
+									<p class="float-right"><a href="product.
+									html#comments">15 reviews</a></p>
+									<p>
+										<span class="far fa-star font-weight-bolder"></span>
+										<span class="far fa-star font-weight-bolder"></span>
+										<span class="far fa-star font-weight-bolder"></span>
+										<span class="far fa-star font-weight-bolder"></span>
+										<span class="far fa-star font-weight-bolder"></span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4 mb-4">
+						<div class="img-thumbnail overflow-hidden">
+							<img src="img/item.jpg" class="img-fluid" alt="">
+							<div class="add-to-cart">
+								<a href="#" class="fas fa-plus-circle"
+								data-toggle="tooltip" data-placement="top" title="Add to cart"></a>
+							</div>
+							<div class="caption p-3">
+								<h5 class="float-right">$10.87</h5>
+								<h5><a href="product.html">Some Deagle</a>
+								</h5>
+								<p>This is a short description. Lorem ipsum dolor sit
+								amet, consectetur adipiscing elit.</p>
+								<div class="ratings">
+									<p class="float-right"><a href="product.
+									html#comments">15 reviews</a></p>
+									<p>
+										<span class="far fa-star font-weight-bolder"></span>
+										<span class="far fa-star font-weight-bolder"></span>
+										<span class="far fa-star font-weight-bolder"></span>
+										<span class="far fa-star font-weight-bolder"></span>
+										<span class="far fa-star font-weight-bolder"></span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4 mb-4">
+						<div class="img-thumbnail overflow-hidden">
+							<img src="img/item.jpg" class="img-fluid" alt="">
+							<div class="add-to-cart">
+								<a href="#" class="fas fa-plus-circle"
+								data-toggle="tooltip" data-placement="top" title="Add to cart"></a>
+							</div>
+							<div class="caption p-3">
+								<h5 class="float-right">$10.87</h5>
+								<h5><a href="product.html">Some Deagle</a>
+								</h5>
+								<p>This is a short description. Lorem ipsum dolor sit
+								amet, consectetur adipiscing elit.</p>
+								<div class="ratings">
+									<p class="float-right"><a href="product.
+									html#comments">15 reviews</a></p>
+									<p>
+										<span class="far fa-star font-weight-bolder"></span>
+										<span class="far fa-star font-weight-bolder"></span>
+										<span class="far fa-star font-weight-bolder"></span>
+										<span class="far fa-star font-weight-bolder"></span>
+										<span class="far fa-star font-weight-bolder"></span>
+									</p>
+								</div>
+							</div>
+						</div>
+						</div>
+						<div class="col-sm-6 col-md-4 mb-4">
+							<div class="img-thumbnail overflow-hidden">
+								<img src="img/item.jpg" class="img-fluid" alt="">
+								<div class="add-to-cart">
+									<a href="#" class="fas fa-plus-circle"
+									data-toggle="tooltip" data-placement="top" title="Add to cart"></a>
+								</div>
+								<div class="caption p-3">
+									<h5 class="float-right">$10.87</h5>
+									<h5><a href="product.html">Some Deagle</a>
+									</h5>
+									<p>This is a short description. Lorem ipsum dolor sit
+									amet, consectetur adipiscing elit.</p>
+									<div class="ratings">
+										<p class="float-right"><a href="product.
+										html#comments">15 reviews</a></p>
+										<p>
+											<span class="far fa-star font-weight-bolder"></span>
+											<span class="far fa-star font-weight-bolder"></span>
+											<span class="far fa-star font-weight-bolder"></span>
+											<span class="far fa-star font-weight-bolder"></span>
+											<span class="far fa-star font-weight-bolder"></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div class="d-flex justify-content-center">
+			<p>@Copyright 2021 All rights reserved </p>
+		</div>
+		<div class="modal" id="myModal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<!-- Modal Header -->
+					<div class="modal-header">
+						<h5 class="modal-title">Sign in</h5>
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+					<!-- Modal body -->
+					<div class="modal-body">
+						<form class="form-group p-3">
+							<div class="form-group">
+								<label for="exampleDropdownFormEmail1">Sign in with your Email address</label>
+								<input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="Email address">
+							</div>
+							<div class="form-group">
+								<input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+							</div>
+							<div class="form-check">
+								<input type="checkbox" class="form-check-input" id="dropdownCheck">
+								<label class="form-check-label" for="dropdownCheck">
+									Remember me
+								</label>
+							</div>
+							<br>
+							<a href="account.html" class="btn btn-lg btn-primary btn-block">Sign in</a>
+							<div class="row">
+								<div class="col-xs-3">
+									<a href="#" class="btn btn-facebook btn-large btn-caps btn-block">Facebook <span class="icon-facebook"></span></a>
+								</div>
+								<div class="col-xs-3">
+									<a href="#" class="btn btn-twitter btn-large btn-caps btn-block">Twitter <span class="icon-twitter"></span></a>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</body>
+</html>
