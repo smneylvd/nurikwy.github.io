@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Title -->
+    <title>NAY news</title>
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+      <!-- Navbar Area -->
+      <div class="nikki-main-menu">
+        <div class="classy-nav-container breakpoint-off">
+          <div class="container-fluid">
+            <!-- Menu -->
+            <nav class="classy-navbar justify-content-between" id="nikkiNav">
+              <!-- Nav brand -->
+              <a href="/" class="nav-brand"><img src="img/core-img/logo.png" alt=""></a>
+              <!-- Navbar Toggler -->
+              <div class="classy-navbar-toggler">
+                <span class="navbarToggler"><span></span><span></span><span></span></span>
+              </div>
+              <!-- Menu -->
+              <div class="classy-menu">
+                <!-- close btn -->
+                <div class="classycloseIcon">
+                  <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                </div>
+                <!-- Nav Start -->
+                <div class="classynav">
+                  <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#">Pages</a>
+                    <ul class="dropdown">
+                      <li><a href="/">Home</a></li>
+                      <li><a href="/single-post">Your Post</a></li>
+                      <li><a href="about-us.html">About</a></li>
+                      <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Catagories</a>
+                  <div class="dropdown">
+                    <ul class="single-mega cn-col-4">
+                      <li><a href="#">- Medicine</a></li>
+                      <li><a href="#">- Food</a></li>
+                      <li><a href="#">- Travel</a></li>
+                      <li><a href="/cat-education">- Education</a></li>
+                      <li><a href="#">- Politics</a></li>
+                      <li><a href="#">- Sport</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="about-us.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+              <!-- Search Form -->
+              <div class="search-form">
+                <form action="#" method="get">
+                  <input type="search" name="search" class="form-control" placeholder="Search and hit enter...">
+                  <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+              </div>
+              <!-- Social Button -->
+              <div class="top-social-info">
+                <a href="#" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="#" data-toggle="tooltip" data-placement="bottom" title="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="#" data-toggle="tooltip" data-placement="bottom" title="Pinterest"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                <a href="#" data-toggle="tooltip" data-placement="bottom" title="RSS Feed"><i class="fa fa-rss" aria-hidden="true"></i></a>
+              </div>
+            </div>
+            <!-- Nav End -->
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- ##### Header Area End ##### -->
+<!-- ##### Hero Area Start ##### -->
+
+<!-- ##### Hero Area End ##### -->
+<!-- ##### Blog Content Area Start ##### -->
+<section class="blog-content-area section-padding-100">
+  <div class="container">
+    <div class="row justify-content-center">
+      <!-- Blog Posts Area -->
+      <div class="col-12 col-lg-8">
+        <div class="blog-posts-area">
+          <div class="row">
+            <!-- Featured Post Area -->
+            <div class="col-12">
+              <div class="featured-post-area mb-50">
+                <h3>Education</h3>
+              </div>
+            </div>
+
+            <%itemList.forEach(function(item){ %>
+              <!-- Single Blog Post -->
+              <div class="col-12 col-sm-6">
+                <div class="single-blog-post mb-50">
+                  <!-- Thumbnail -->
+                  <div class="post-thumbnail">
+                    <a href="#"><img src="img/blog-img/education.jpg" alt=""></a>
+                  </div>
+                  <!-- Content -->
+                  <div class="post-content">
+                    <p class="post-date"><%=item.author%> / <%=item.category%></p>
+                    <a href="#" class="post-title">
+                      <h4><%=item.title%></h4>
+                    </a>
+                    <p class="post-excerpt"><%=item.content%></p>
+                    <div class="form-group">
+                      <form action="/delete" method="post" class="col-12 col-md-6">
+                        <button class="btn btn-sm btn-danger" onClick="this.form.submit()" type="button">Delete</button>
+                        <input type="hidden" name="check" value="<%=item._id%>">
+                      </form>
+                      <form action="/update" method="post" class="col-12 col-md-6">
+                        <button class="btn btn-sm btn-primary" onClick="this.form.submit()" type="button">Edit</button>
+                        <input type="hidden" name="check" value="<%=item._id%>">
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>  
+            <%})%>
+            
+          </div>
+        </div>
+      </div>
+      <!-- Blog Sidebar Area -->
+      <div class="col-12 col-sm-9 col-md-6 col-lg-4">
+        <div class="post-sidebar-area">
+          <!-- ##### Single Widget Area ##### -->
+          <div class="single-widget-area mb-30">
+            <!-- Title -->
+            <div class="widget-title">
+              <h6>About Weather</h6>
+            </div>
+            <!-- Thumbnail -->
+            <div class="about-thumbnail">
+              <img src="img/blog-img/weather.jpg" alt="">
+            </div>
+            <div class="search-form">
+              <form action="/" method="post">
+                <input type="text" name="city" placeholder="City">
+                <button type="submit" name="button">Search</button>
+              </form>
+            </div>
+            <br>
+            <!-- Content -->
+            <div class="widget-content text-center">
+            <h3><%=weather_title%></h3>
+            <p><%=weather_desc%></p>
+              <img src="img/core-img/logo.png" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ipsum adipisicing</p>
+            </div>
+          </div>
+          <!-- ##### Single Widget Area ##### -->
+          <div class="single-widget-area mb-30">
+            <!-- Title -->
+            <div class="widget-title">
+              <h6>popular tags</h6>
+            </div>
+            <!-- Tags -->
+            <ol class="popular-tags d-flex flex-wrap">
+              <li><a href="#">- Medicine</a></li>
+              <li><a href="#">- Food</a></li>
+              <li><a href="#">- Travel</a></li>
+              <li><a href="/cat-education">- Education</a></li>
+              <li><a href="#">- Politics</a></li>
+              <li><a href="#">- Sport</a></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ##### Blog Content Area End ##### -->
+<!-- ##### Instagram Area Start ##### -->
+<div class="follow-us-instagram">
+  <div class="instagram-content d-flex flex-wrap align-items-center">
+    <!-- Single Instagram Slide -->
+    <div class="single-instagram">
+      <img src="img/blog-img/sport.jpg" alt="">
+      <a href="#"><i class="fa fa-instagram"></i></a>
+    </div>
+    <!-- Single Instagram Slide -->
+    <div class="single-instagram">
+      <img src="img/blog-img/medicine.jpg" alt="">
+      <a href="#"><i class="fa fa-instagram"></i></a>
+    </div>
+    <!-- Single Instagram Slide -->
+    <div class="single-instagram">
+      <img src="img/blog-img/education.jpg" alt="">
+      <a href="#"><i class="fa fa-instagram"></i></a>
+    </div>
+    <!-- Single Instagram Slide -->
+    <div class="single-instagram">
+      <img src="img/blog-img/travel.jpg" alt="">
+      <a href="#"><i class="fa fa-instagram"></i></a>
+    </div>
+    <!-- Single Instagram Slide -->
+    <div class="single-instagram">
+      <img src="img/blog-img/food.jpg" alt="">
+      <a href="#"><i class="fa fa-instagram"></i></a>
+    </div>
+    <!-- Single Instagram Slide -->
+    <div class="single-instagram">
+      <img src="img/blog-img/4.jpg" alt="">
+      <a href="#"><i class="fa fa-instagram"></i></a>
+    </div>
+    <!-- Single Instagram Slide -->
+    <div class="single-instagram">
+      <img src="img/blog-img/sport.jpg" alt="">
+      <a href="#"><i class="fa fa-instagram"></i></a>
+    </div>
+    <!-- Single Instagram Slide -->
+    <div class="single-instagram">
+      <img src="img/blog-img/medicine.jpg" alt="">
+      <a href="#"><i class="fa fa-instagram"></i></a>
+    </div>
+  </div>
+</div>
+<!-- ##### Instagram Area End ##### -->
+<!-- ##### Footer Area Start ##### -->
+<footer class="footer-area">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <!-- Footer Social Info -->
+        <div class="footer-social-info d-flex align-items-center justify-content-between">
+          <a href="#"><i class="fa fa-facebook"></i><span>Facebook</span></a>
+          <a href="#"><i class="fa fa-twitter"></i><span>Twitter</span></a>
+          <a href="#"><i class="fa fa-google-plus"></i><span>Google +</span></a>
+          <a href="#"><i class="fa fa-linkedin"></i><span>linkedin</span></a>
+          <a href="#"><i class="fa fa-instagram"></i><span>Instagram</span></a>
+          <a href="#"><i class="fa fa-vimeo"></i><span>Vimeo</span></a>
+          <a href="#"><i class="fa fa-youtube"></i><span>Youtube</span></a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="copywrite-text">
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- ##### Footer Area Start ##### -->
+<!-- ##### All Javascript Script ##### -->
+<!-- jQuery-2.2.4 js -->
+<script src="js/jquery/jquery-2.2.4.min.js"></script>
+<!-- Popper js -->
+<script src="js/bootstrap/popper.min.js"></script>
+<!-- Bootstrap js -->
+<script src="js/bootstrap/bootstrap.min.js"></script>
+<!-- All Plugins js -->
+<script src="js/plugins/plugins.js"></script>
+<!-- Active js -->
+<script src="js/active.js"></script>
+</body>
+</html>

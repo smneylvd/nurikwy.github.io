@@ -1,9 +1,0 @@
-/* your styles go here */
-a:hover {
-	text-decoration: none;
-}
-.carousel-item > img {
-	position: relative;
-	bottom: 100px;
-	width: 100%;
-}

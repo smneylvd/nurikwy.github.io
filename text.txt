@@ -1,0 +1,24 @@
+apiKey = "07e6be11058f287f345016199616cd77"
+url = "https:/api.openweathermap.org/data/2.5/weather?appid="+apiKey+"&q=Moscow&units=metric"
+https.get(url, function(response){
+  //console.log(response)
+  response.on("data", function(data){
+
+    var weatherData = JSON.parse(data)
+    var country = weatherData.sys.country;
+    var flag = "http://openweathermap.org/images/flags/" + country.toLowerCase() + ".png"
+    res.setHeader('Content-Type', 'text/html');
+    res.write("<h3>"
+              + weatherData.name + ", "
+              + weatherData.sys.country + " <image src = "
+              + flag + ">, "
+              + weatherData.weather[0].description
+              + "</h3>")
+    res.write("<p>"
+              + weatherData.main.temp + " C temperature from "
+              +  weatherData.main.temp_min + "to"
+              +  weatherData.main.temp_max + " C, wind "
+              + weatherData.wind.speed +" m/s." + "</p>")
+    console.log(weatherData.wind.speed)
+  })
+})
