@@ -128,7 +128,8 @@ button:hover {
 /* Add padding to container elements */
 .container {
   padding: 0rem 4rem;
-  min-height: 29em;
+  min-height: 21em;
+  height: 100%;
 }
 
 /* Clear floats */
