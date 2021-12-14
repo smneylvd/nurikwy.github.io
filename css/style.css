@@ -26,6 +26,7 @@ body {
 .topnav a:hover {
   background-color: green;
   color: #e8e8e8;
+  text-decoration: none;
 }
 
 .topnav a.active {
@@ -599,4 +600,45 @@ blockquote:before {display: block;content: "\201c";font: bold 120px "Times New R
   background-color:inherit;
   color:#690;
   font-size:16px;
+}
+
+.center {
+  padding-top: 30px !important;
+  text-align: center;
+}
+
+.one_half, .one_third, .two_third, .one_quarter, .two_quarter, .three_quarter{display:inline-block; float:left; margin:0 0 0 4.21052%; list-style:none;}
+
+.first{margin-left:0; clear:left;}
+
+.one_quarter{width:21.8421%;}
+.one_third{width: 30%;}
+.one_half, .two_quarter{width:47.89473%;}
+.two_third{width:65.26315%;}
+.three_quarter{width:73.94736%;}
+
+@media only screen and (max-width: 950px) {
+  .one_half, .one_third, .two_third, .one_quarter, .two_quarter, .three_quarter{
+    width: 90%;
+    clear:left;
+    margin-left: 2rem;
+  }
+}
+
+.benefit-card{
+  position: relative;
+  padding: 0;
+}
+.benefit-card > img{
+  top: 0;
+  margin: 0;
+  position: relative;
+}
+.benefit-card > span{
+  font-family: Agency FB;
+  font-weight: bold;
+  position: absolute;
+  font-size: 2rem;
+  top: 45%;
+  left: 42%;
 }
