@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
@@ -382,7 +385,7 @@ button:hover {
   background-color: #3caa40;
 }
 .footer .col {
-  width: 190px;
+  width: 21.8421%;
   height: auto;
   float: left;
   box-sizing: border-box;
@@ -453,6 +456,9 @@ li > img:hover {
   }
 }
 @media only screen and (max-width: 1139px) {
+  .footer .col {
+    width: 25%;
+  }
   .contain .social {
     width: 1000px;
     display: block;
@@ -499,4 +505,98 @@ li > img:hover {
   .text{
       font-size: 2rem;
     }
+}
+
+
+a {
+  background-color:inherit;
+  color:#333;
+  text-decoration:none; 
+}
+
+a:hover {
+  text-decoration:underline; 
+} 
+
+blockquote {font: italic 18px "Times New Roman",serif;width: 70%;margin: 5px auto;padding: 10px 50px;position: relative;color: #4caf50;}
+  
+
+blockquote:before {display: block;content: "\201c";font: bold 120px "Times New Roman", serif;position: absolute;left: -20px;top: -10px;color: #4caf50;}
+
+
+/* Content */
+#content
+{ text-align:left;
+  width:90%;
+  padding:0 25px 10px 25px;
+  margin:0 auto;  }
+  
+#content h2
+{ 
+  padding:0;
+  font-size: 3rem;
+  margin:0 auto; }  
+
+#content h3
+{
+  background-color:inherit;
+  color: #4caf50;
+  font:bold 12pt Arial,sans-serif;
+  font-size: 2rem;
+  padding:0;
+  }
+
+#content span.author
+{ font:normal 8pt Arial,Helvetica,sans-serif;
+  background-color:inherit;
+  color:#666; }
+
+#content span.author a
+{ background-color:inherit;
+  color:#999;
+  text-decoration:none;
+  padding:0 3px; }
+
+#content span.author a:hover
+{ background-color:#690;
+  color:#fff; }
+
+#content p a
+{ background-color:inherit;
+  color:#690;
+  text-decoration:underline;  }   
+  
+#content p
+{ text-align:justify;
+  line-height:24px; }
+
+#content p.center { text-align: center; }
+  
+#content li
+{ line-height:24px; }
+
+#content li a
+{ background-color:inherit;
+  color:#690;
+  text-decoration:none; }
+
+#content li a:hover
+{ text-decoration:underline; }
+
+#content ul {
+  list-style:none;
+  padding:0;
+}
+  
+#content ul li
+{ list-style-position:inside;
+    text-indent: 0px;
+  padding-left:20px;
+  margin:0; } 
+  
+#content ul li:before {
+  content: "\27a1 \00a0 \00a0";
+  background-color:inherit;
+  color:#690;
+  font-size:16px;
 }
