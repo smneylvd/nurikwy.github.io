@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-
-
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
@@ -153,7 +150,7 @@ button:hover {
 
 .icon {
   display: none;
-} 
+}
 .topnav, .topnav-links  {
   display: block;
 }
@@ -184,7 +181,7 @@ button:hover {
   }
   .modal-content {
     width: 60%;
-  } 
+  }
   .icon {
     display: block;
   }
@@ -217,7 +214,7 @@ button:hover {
     position: relative;
   }
 
-  
+
 
   .topnav a {
     color: white;
@@ -245,19 +242,19 @@ button:hover {
     color: white;
   }
 }
+
+
 /* Change styles Mobile devices. */
 @media (max-width: 480px) {
   .modal-content {
     width: 90%;
-  } 
+  }
 }
-
-
 
 
 /* Add Animation */
 @-webkit-keyframes slideIn {
-  from {top: -100px; opacity: 0} 
+  from {top: -100px; opacity: 0}
   to {top: 0; opacity: 1}
 }
 
@@ -267,12 +264,12 @@ button:hover {
 }
 
 @-webkit-keyframes fadeIn {
-  from {opacity: 0} 
+  from {opacity: 0}
   to {opacity: 1}
 }
 
 @keyframes fadeIn {
-  from {opacity: 0} 
+  from {opacity: 0}
   to {opacity: 1}
 }
 
@@ -362,12 +359,12 @@ button:hover {
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 
@@ -387,7 +384,7 @@ button:hover {
   background-color: #3caa40;
 }
 .footer .col {
-  width: 21.8421%;
+  width: 190px;
   height: auto;
   float: left;
   box-sizing: border-box;
@@ -458,9 +455,6 @@ li > img:hover {
   }
 }
 @media only screen and (max-width: 1139px) {
-  .footer .col {
-    width: 25%;
-  }
   .contain .social {
     width: 1000px;
     display: block;
@@ -508,6 +502,7 @@ li > img:hover {
       font-size: 2rem;
     }
 }
+
 
 
 a {
@@ -653,3 +648,4 @@ blockquote:before {display: block;content: "\201c";font: bold 120px "Times New R
   bottom: 16%;
   left: 20%;
 }
+

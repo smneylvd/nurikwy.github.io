@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<!-- navbar start -->
+<div class="topnav mobile-container">
+	<img href="#home" class="logo" src="img/logo.png" alt="logo">
+	<div class="topnav-links">
+		<a class="active" href="#home">Home</a>
+		<a href="news.html">News</a>
+		<a href="#contact">Contact</a>
+		<a href="achievements.html">Achievements</a>
+		<a href="#about">About</a>
+		<a class="authorizeButton" id="showRegister">Sign-up</a>
+		<a class="authorizeButton" id="showLogin">Sign-in</a>
+	</div>
+	<a class="icon" onclick="toggleCollapse()">
+		<i class="fa fa-bars"></i>
+	</a>
+</div>
+<!-- navbar end -->
+
+
+
+<div class="container">
+	<div class="content">
+		<h2 class="center">Our requisites</h2>
+		<div class="post">
+			<p>Lacinia ut, pellentesque in, venenatis in, elitorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed eleifend laoreet magna. Donec auctor libero id massa. Aenean sit amet enim ac urna dictum lobortis. Praesent convallis sapien eu tortor. Phasellus eros tortor.</p>
+		</div>
+		<div class="center">
+			
+			<div class="one_third first">
+				<div class="benefit-card">
+					<img src="img/pic1.svg" alt="" width="100%" height="100%">
+					<span id="count1"></span>
+					<p>Lorem ipsum dolor sit amet</p>
+				</div>
+			</div>
+			<div class="one_third">
+				<div class="benefit-card">
+					<img src="img/pic2.svg" alt="" width="100%" height="100%">
+					<span id="count2"></span>
+					<p> consectetuer adipiscing elit.</p>
+				</div>
+			</div>
+			<div class="one_third benefit-card">
+				<div class="benefit-card">
+					<img src="img/pic3.svg" alt="" width="100%" height="100%">
+					<span id="count3"></span>
+					<p> Sed eleifend laoreet magna.</p>
+				</div>
+			</div>
+
+		</div>
+		<div class="post">
+			
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed eleifend laoreet magna. Donec auctor libero id massa. Aenean sit amet enim ac urna dictum lobortis. Praesent convallis sapien eu tortor. Phasellus eros tortor, lacinia ut, pellentesque in, venenatis in, elit.</p>
+		</div>
+		<hr>
+		<h2>Who we helped</h2>
+	</div>
+
+</div>
+	<hr>
+
+<!-- The Register Modal form start-->
+<form class="authorization modal" id="registerModal" action="" style="border:1px solid #ccc">
+	<div class="authorization modal-content">
+		<span class="close">&times;</span>
+		<h1>Sign Up</h1>
+		<p>Please fill in this form to create an account.</p>
+		<hr>
+		<label for="email"><b>Email</b></label>
+		<input type="text" placeholder="Enter Email" name="email" required>
+		<label for="psw"><b>Password</b></label>
+		<input type="password" placeholder="Enter Password" name="psw" required>
+		<label for="psw-repeat"><b>Repeat Password</b></label>
+		<input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+		<div class="clearfix">
+			<button type="submit" class="signupbtn">Sign Up</button>
+		</div>
+	</div>
+</form>
+<!-- The Register Modal form end-->
+
+<!-- The Login Modal form start -->
+<form class="authorization modal" id="loginModal" action="" style="border:1px solid #ccc">
+	<div class="authorization modal-content">
+		<span class="close">&times;</span>
+		<h1>Sign in</h1>
+		<hr>
+		<label for="email"><b>Email</b></label>
+		<input type="text" placeholder="Enter Email" name="email" required>
+		<label for="psw"><b>Password</b></label>
+		<input type="password" placeholder="Enter Password" name="psw" required>
+		<div class="clearfix">
+			<button type="submit" class="signupbtn">Sign Up</button>
+		</div>
+	</div>
+</form>
+<!-- The Login Modal form end -->
+
+
+<!-- Footer start -->
+<div class="footer">
+	<div class="contain">
+		<div class="col">
+			<h1>Accounts</h1>
+			<ul>
+				<li>About</li>
+				<li>Mission</li>
+				<li>Services</li>
+				<li>Social</li>
+				<li>Get in touch</li>
+			</ul>
+		</div>
+		<div class="col">
+			<h1>Resources</h1>
+			<ul>
+				<li>Webmail</li>
+				<li>Redeem code</li>
+				<li>Site map</li>
+			</ul>
+		</div>
+		<div class="col">
+			<h1>Support</h1>
+			<ul>
+				<li>Contact us</li>
+				<li>Web chat</li>
+				<li>Open ticket</li>
+			</ul>
+		</div>
+		<div class="col social">
+			<h1>Social</h1>
+			<ul>
+				<li><img src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Instagram_colored_svg_1-128.png" width="32" style="width: 32px;"></li>
+				<li><img src="https://cdn1.iconfinder.com/data/icons/social-media-2285/512/Colored_Facebook3_svg-128.png" width="32" style="width: 32px;"></li>
+				<li><img src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Youtube_colored_svg-128.png" width="32" style="width: 32px;"></li>
+			</ul>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+<!-- Footer end -->
+
+<script src="js/script.js" type="text/javascript" charset="utf-8" async defer></script>
+</body>
+</html>

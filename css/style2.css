@@ -1,5 +1,5 @@
 #content_inner {
-    width: 84em;
+    width: 100%;
     margin: auto;
     padding-top: 0;
 }
@@ -29,52 +29,20 @@ display: inline-flex;
 margin: 0 0px 0 50px;
 }
 
-.pagination {
-text-align: right;
-margin-top: 20px;
-}
-.fourths_portfolio {
-width: 220px;
-height: 220px;
-margin: 0 10px 20px 10px;
-background-color: #e66e0d;
-float: left;
-position: relative;
-}
+.pagination {text-align: right;margin-top: 20px;margin-right: 1em;width: 100%;}
+.fourths_portfolio {width: 30%;margin: 0.5rem 0 0 2rem;background-color: #49b34d;float: left;position: relative;overflow: hidden;min-height: 20rem;}
 
-.fourths_portfolio a {
-display: block;
-width: 220px;
-height: 220px;
--webkit-transition: all 0.3s ease-in-out;
--moz-transition: all 0.3s ease-in-out;
--o-transition: all 0.3s ease-in-out;
--ms-transition: all 0.3s ease-in-out;
-transition: all 0.3s ease-in-out;
-}
+.fourths_portfolio a {display: block;width: 100%;height: 220px;-webkit-transition: all 0.3s ease-in-out;-moz-transition: all 0.3s ease-in-out;-o-transition: all 0.3s ease-in-out;-ms-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;}
 
 .fourths_portfolio a:hover {
 opacity: 0.15;
 }
 
-.fourths_portfolio h4 {
-position: absolute;
-top: 80px;
-display: block;
-width: 220px;
-text-align: center;
-text-shadow: 0px 1px #d72d05;
-}
+.fourths_portfolio h4 {position: absolute;top: 80px;display: block;width: 100%;text-align: center;text-shadow: 0px 1px #248427;}
 
-.fourths_portfolio img {
-position: absolute;
-}
+.fourths_portfolio img {position: absolute;width: 100%}
 
-.fourths_portfolio span {
-font-size: 90%;
-font-weight: 200;
-text-shadow: 0px 1px #b70d02;
-}
+.fourths_portfolio span {font-size: 90%;font-weight: 200;text-shadow: 0px 1px #0f5e13;}
 hr.cleanit {
     visibility: hidden;
     clear: both;
@@ -83,19 +51,18 @@ hr.cleanit {
 
 div.cara {
     clear: both;
-    width: 100em;
+    width: 100%;
     height: 10px;
     background-color: #cccccc;
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-left: 10px;
 }
 
 p.textit {
-    font-size: 115%;
+    font-size: 1.5em;
     font-weight: 400;
     line-height: 150%;
-    width: 940px;
+    width: 100%;
     margin: 50px 0 0 10px;
     padding-bottom: 50px;
 }
@@ -104,6 +71,35 @@ h1.textit{
   font-size: 115%;
   font-weight: 400;
   line-height: 150%;
-  width: 940px;
+  width: 100%;
+}
 
+@media only screen and (min-width: 1280px) {
+    .fourths_portfolio > h4{
+        font-size: 1.8em;    
+    }
+}
+@media only screen and (max-width: 1139px) {
+    .fourths_portfolio{
+        width: 46%;
+    }
+    .fourths_portfolio > h4{
+        font-size: 2em;    
+    }
+}
+@media only screen and (max-width: 950px) {
+    .fourths_portfolio{
+        width: 90%;
+    }
+    .fourths_portfolio > h4{
+        font-size: 2em;    
+    }
+}
+@media only screen and (max-width: 500px) {
+    .fourths_portfolio > h4{
+        font-size: 2em;    
+    }
+}
+@media only screen and (max-width: 340px) {
+    
 }
