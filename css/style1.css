@@ -1,0 +1,655 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.topnav {
+  overflow: hidden;
+  /* float: left; */
+  /* top:-100 !important; */
+  background-color: #4caf50;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.topnav a:hover {
+  background-color: green;
+  color: #e8e8e8;
+  text-decoration: none;
+}
+
+.topnav a.active {
+  background-color: #8bc34a;
+  color: white;
+}
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  margin-bottom: 25%;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%; /* Could be more or less, depending on screen size */
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 90%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  cursor: pointer;
+  width: auto;
+  opacity: 0.9;
+
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signinbtn, .signupbtn {
+  float: left;
+  width: 100%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 0rem 4rem;
+  min-height: 21em;
+  height: 100%;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.authorizeButton {
+  float: right !important;
+}
+.authorizeButton:hover{
+  background-color: green !important;
+  color: white !important;
+}
+
+.icon {
+  display: none;
+}
+.topnav, .topnav-links  {
+  display: block;
+}
+
+/* Change styles Laptops. */
+@media (max-width: 1024px) {
+  .modal-content {
+    width: 50%;
+  }
+  .topnav, .topnav-links  {
+    display: block;
+  }
+}
+
+.logo {
+  width: 2.8rem;
+  margin: 1px 15px 0px 15px;
+  filter: invert(100%) sepia(100%) saturate(100%) hue-rotate(115deg) brightness(200%) contrast(106%);
+  float: left;
+  padding: 0 !important;
+}
+
+
+/* Change styles  iPads, Tablets. */
+@media (max-width: 768px) {
+  .logo {
+    margin-bottom: 5px !important;
+  }
+  .modal-content {
+    width: 60%;
+  }
+  .icon {
+    display: block;
+  }
+
+  .mobile-container {
+    width: 100%;
+    margin: auto;
+    background-color: #555;
+    height: 50px;
+    color: white;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s;
+    top: 0;
+    height: 100%;
+    min-height: 3rem;
+  }
+
+  .topnav-links > a {
+      float: left !important;
+      position: relative;
+      display: block;
+      width: 100%;
+  }
+
+  .topnav {
+    overflow: hidden;
+    background-color: #4caf50;
+    position: relative;
+  }
+
+
+
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  .topnav a.icon {
+    background: #4caf50;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav a:hover {
+    background-color: green;
+    color: white;
+  }
+
+  .active {
+    background-color: #04AA6D;
+    color: white;
+  }
+}
+/* Change styles Mobile devices. */
+@media (max-width: 480px) {
+  .modal-content {
+    width: 90%;
+  }
+}
+
+
+
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+  from {top: -100px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+  from {top: -100px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+
+
+/*slideshow*/
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  max-height: 30rem;
+  margin: auto;
+  overflow: hidden;
+  color: black;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 7rem;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  background-color: #00000033;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block !important;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+
+/*footer*/
+.footer {
+  bottom: 0;
+  width: 100%;
+  position: relative;
+  height: auto;
+  background-color: #3caa40;
+}
+.footer .col {
+  width: 21.8421%;
+  height: auto;
+  float: left;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 0px 20px 20px 20px;
+}
+.footer .col h1 {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 17px;
+  padding: 20px 0px 5px 0px;
+  color: rgb(0 0 0 / 36%);
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.250em;
+}
+.footer .col ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.footer .col ul li {
+  color: #d7d7d7;
+  font-size: 14px;
+  font-family: inherit;
+  font-weight: bold;
+  padding: 5px 0px 5px 0px;
+  cursor: pointer;
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+}
+
+li > img {
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    opacity: .8;
+}
+
+li > img:hover {
+    opacity: 1;
+}
+.social ul li {
+  display: inline-block;
+  padding-right: 5px !important;
+}
+
+.footer .col ul li:hover {
+  color: #ffffff;
+  transition: .1s;
+  -webkit-transition: .1s;
+  -moz-transition: .1s;
+}
+.clearfix {
+  clear: both;
+}
+@media only screen and (min-width: 1280px) {
+  .contain {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  .text{
+    font-size: 7rem;
+  }
+}
+@media only screen and (max-width: 1139px) {
+  .footer .col {
+    width: 25%;
+  }
+  .contain .social {
+    width: 1000px;
+    display: block;
+  }
+  .social h1 {
+    margin: 0px;
+  }
+  .text{
+    font-size: 5rem;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .footer .col {
+    width: 33%;
+  }
+  .footer .col h1 {
+    font-size: 14px;
+  }
+  .footer .col ul li {
+    font-size: 13px;
+  }
+  .text{
+    font-size: 5rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+    .footer .col {
+      width: 50%;
+    }
+    .footer .col h1 {
+      font-size: 14px;
+    }
+    .footer .col ul li {
+      font-size: 13px;
+    }
+    .text{
+      font-size: 2rem;
+    }
+}
+@media only screen and (max-width: 340px) {
+  .footer .col {
+    width: 100%;
+  }
+  .text{
+      font-size: 2rem;
+    }
+}
+
+
+a {
+  background-color:inherit;
+  color:#333;
+  text-decoration:none;
+}
+
+a:hover {
+  text-decoration:underline;
+}
+
+blockquote {font: italic 18px "Times New Roman",serif;width: 70%;margin: 5px auto;padding: 10px 50px;position: relative;color: #4caf50;}
+
+
+blockquote:before {display: block;content: "\201c";font: bold 120px "Times New Roman", serif;position: absolute;left: -20px;top: -10px;color: #4caf50;}
+
+
+/* Content */
+.content
+{ text-align:left;
+  width:90%;
+  padding:0 25px 10px 25px;
+  margin:0 auto;  }
+
+.content h2
+{
+  padding:0;
+  font-size: 3rem;
+  margin:0 auto; }
+
+.content h3
+{
+  background-color:inherit;
+  color: #4caf50;
+  font:bold 12pt Arial,sans-serif;
+  font-size: 2rem;
+  padding:0;
+  }
+
+.content span.author
+{ font:normal 8pt Arial,Helvetica,sans-serif;
+  background-color:inherit;
+  color:#666; }
+
+.content span.author a
+{ background-color:inherit;
+  color:#999;
+  text-decoration:none;
+  padding:0 3px; }
+
+.content span.author a:hover
+{ background-color:#690;
+  color:#fff; }
+
+.content p a
+{ background-color:inherit;
+  color:#690;
+  text-decoration:underline;  }
+
+.content p
+{ text-align:justify;
+  line-height:24px; }
+
+.content p.center { text-align: center; }
+
+.content li
+{ line-height:24px; }
+
+.content li a
+{ background-color:inherit;
+  color:#690;
+  text-decoration:none; }
+
+.content li a:hover
+{ text-decoration:underline; }
+
+.content ul {
+  list-style:none;
+  padding:0;
+}
+
+.content ul li
+{ list-style-position:inside;
+    text-indent: 0px;
+  padding-left:20px;
+  margin:0; }
+
+.content ul li:before {
+  content: "\27a1 \00a0 \00a0";
+  background-color:inherit;
+  color:#690;
+  font-size:16px;
+}
+
+.center {
+  padding-top: 30px !important;
+  text-align: center;
+}
+
+.one_half, .one_third, .two_third, .one_quarter, .two_quarter, .three_quarter{display:inline-block; float:left; margin:0 0 0 4.21052%; list-style:none;}
+
+.first{margin-left:0; clear:left;}
+
+.one_quarter{width:21.8421%;}
+.one_third{width: 30%;}
+.one_half, .two_quarter{width:47.89473%;}
+.two_third{width:65.26315%;}
+.three_quarter{width:73.94736%;}
+
+@media only screen and (max-width: 950px) {
+  .one_half, .one_third, .two_third, .one_quarter, .two_quarter, .three_quarter{
+    width: 90%;
+    clear:left;
+    margin-left: 2rem;
+  }
+}
+
+.benefit-card{
+  position: relative;
+  padding: 0;
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-duration: 2s;
+  animation-name: fadeIn;
+  animation-duration: 2s
+}
+.benefit-card > img{
+  top: 0;
+  margin: 0;
+  position: relative;
+}
+.benefit-card > span{
+  font-family: Agency FB;
+  font-weight: bold;
+  position: absolute;
+  font-size: 2rem;
+  top: 45%;
+  left: 42%;
+}
+.benefit-card > p {
+  position: absolute;
+  text-align: center;
+  bottom: 16%;
+  left: 20%;
+}
