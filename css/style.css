@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-
-
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
@@ -26,7 +23,6 @@ body {
 .topnav a:hover {
   background-color: green;
   color: #e8e8e8;
-  text-decoration: none;
 }
 
 .topnav a.active {
@@ -152,7 +148,7 @@ button:hover {
 
 .icon {
   display: none;
-} 
+}
 .topnav, .topnav-links  {
   display: block;
 }
@@ -183,7 +179,7 @@ button:hover {
   }
   .modal-content {
     width: 60%;
-  } 
+  }
   .icon {
     display: block;
   }
@@ -216,7 +212,7 @@ button:hover {
     position: relative;
   }
 
-  
+
 
   .topnav a {
     color: white;
@@ -244,19 +240,31 @@ button:hover {
     color: white;
   }
 }
+
+
 /* Change styles Mobile devices. */
 @media (max-width: 480px) {
   .modal-content {
     width: 90%;
-  } 
+  }
 }
-
-
+.first1{
+  padding-top:10px;
+  padding-bottom: 10px;
+  width: 50em;
+  height: 25em;
+}
+.second2{
+  padding-top:10px;
+  padding-bottom: 10px;
+  width: 50em;
+  height: 25em;
+}
 
 
 /* Add Animation */
 @-webkit-keyframes slideIn {
-  from {top: -100px; opacity: 0} 
+  from {top: -100px; opacity: 0}
   to {top: 0; opacity: 1}
 }
 
@@ -266,12 +274,12 @@ button:hover {
 }
 
 @-webkit-keyframes fadeIn {
-  from {opacity: 0} 
+  from {opacity: 0}
   to {opacity: 1}
 }
 
 @keyframes fadeIn {
-  from {opacity: 0} 
+  from {opacity: 0}
   to {opacity: 1}
 }
 
@@ -361,12 +369,12 @@ button:hover {
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 
@@ -386,7 +394,7 @@ button:hover {
   background-color: #3caa40;
 }
 .footer .col {
-  width: 21.8421%;
+  width: 190px;
   height: auto;
   float: left;
   box-sizing: border-box;
@@ -457,9 +465,6 @@ li > img:hover {
   }
 }
 @media only screen and (max-width: 1139px) {
-  .footer .col {
-    width: 25%;
-  }
   .contain .social {
     width: 1000px;
     display: block;
@@ -506,139 +511,4 @@ li > img:hover {
   .text{
       font-size: 2rem;
     }
-}
-
-
-a {
-  background-color:inherit;
-  color:#333;
-  text-decoration:none; 
-}
-
-a:hover {
-  text-decoration:underline; 
-} 
-
-blockquote {font: italic 18px "Times New Roman",serif;width: 70%;margin: 5px auto;padding: 10px 50px;position: relative;color: #4caf50;}
-  
-
-blockquote:before {display: block;content: "\201c";font: bold 120px "Times New Roman", serif;position: absolute;left: -20px;top: -10px;color: #4caf50;}
-
-
-/* Content */
-#content
-{ text-align:left;
-  width:90%;
-  padding:0 25px 10px 25px;
-  margin:0 auto;  }
-  
-#content h2
-{ 
-  padding:0;
-  font-size: 3rem;
-  margin:0 auto; }  
-
-#content h3
-{
-  background-color:inherit;
-  color: #4caf50;
-  font:bold 12pt Arial,sans-serif;
-  font-size: 2rem;
-  padding:0;
-  }
-
-#content span.author
-{ font:normal 8pt Arial,Helvetica,sans-serif;
-  background-color:inherit;
-  color:#666; }
-
-#content span.author a
-{ background-color:inherit;
-  color:#999;
-  text-decoration:none;
-  padding:0 3px; }
-
-#content span.author a:hover
-{ background-color:#690;
-  color:#fff; }
-
-#content p a
-{ background-color:inherit;
-  color:#690;
-  text-decoration:underline;  }   
-  
-#content p
-{ text-align:justify;
-  line-height:24px; }
-
-#content p.center { text-align: center; }
-  
-#content li
-{ line-height:24px; }
-
-#content li a
-{ background-color:inherit;
-  color:#690;
-  text-decoration:none; }
-
-#content li a:hover
-{ text-decoration:underline; }
-
-#content ul {
-  list-style:none;
-  padding:0;
-}
-  
-#content ul li
-{ list-style-position:inside;
-    text-indent: 0px;
-  padding-left:20px;
-  margin:0; } 
-  
-#content ul li:before {
-  content: "\27a1 \00a0 \00a0";
-  background-color:inherit;
-  color:#690;
-  font-size:16px;
-}
-
-.center {
-  padding-top: 30px !important;
-  text-align: center;
-}
-
-.one_half, .one_third, .two_third, .one_quarter, .two_quarter, .three_quarter{display:inline-block; float:left; margin:0 0 0 4.21052%; list-style:none;}
-
-.first{margin-left:0; clear:left;}
-
-.one_quarter{width:21.8421%;}
-.one_third{width: 30%;}
-.one_half, .two_quarter{width:47.89473%;}
-.two_third{width:65.26315%;}
-.three_quarter{width:73.94736%;}
-
-@media only screen and (max-width: 950px) {
-  .one_half, .one_third, .two_third, .one_quarter, .two_quarter, .three_quarter{
-    width: 90%;
-    clear:left;
-    margin-left: 2rem;
-  }
-}
-
-.benefit-card{
-  position: relative;
-  padding: 0;
-}
-.benefit-card > img{
-  top: 0;
-  margin: 0;
-  position: relative;
-}
-.benefit-card > span{
-  font-family: Agency FB;
-  font-weight: bold;
-  position: absolute;
-  font-size: 2rem;
-  top: 45%;
-  left: 42%;
 }
