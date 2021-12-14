@@ -219,6 +219,52 @@ form legend {
   display: block;
   margin: 1em 0 0.5em;
 }
+.btn-orange, .btn-red {
+  cursor: pointer;
+}
+
+.btn-orange:hover{
+  opacity: 0.9;
+}
+.btn-red:hover {
+  opacity: 0.75;
+}
+
+.btn-orange{
+  background: #ff8d00;
+  border: none;
+  border-bottom: solid 4px #d97800;
+  padding: 0.2em 1em;
+  margin: 0.5em 0;
+  color: white;
+  text-shadow: 0 -1px 0 #9f5800;
+  font-size: 1em;
+  font-weight: bold;
+  display: inline-block;
+  width: auto;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -ms-border-radius: 0.5em;
+  border-radius: 0.5em;
+}
+
+.btn-red{
+  background: #ff1a1a;
+  border: none;
+  border-bottom: solid 4px #e60000;
+  padding: 0.2em 1em;
+  margin: 0.5em 0;
+  color: white;
+  text-shadow: 0 -1px 0 #e60000;
+  font-size: 1em;
+  font-weight: bold;
+  display: inline-block;
+  width: auto;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -ms-border-radius: 0.5em;
+  border-radius: 0.5em;
+}
 form input[type="submit"] {
   background: #ff1a1a;
   border: none;
