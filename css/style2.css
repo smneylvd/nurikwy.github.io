@@ -1,10 +1,10 @@
 #content_inner {
-    width: 960px;
+    width: 84em;
     margin: auto;
     padding-top: 0;
 }
 ul#work_filter {
-margin: 60px 0 42px 0;
+margin: 30px 0 20px 0;
 }
 
 #work_filter li a, .pagination li a {
@@ -25,8 +25,8 @@ font-weight: 400;
 }
 
 #work_filter li, .pagination li {
-display: inline;
-margin: 0 10px 0 10px;
+display: inline-flex;
+margin: 0 0px 0 50px;
 }
 
 .pagination {
@@ -83,10 +83,11 @@ hr.cleanit {
 
 div.cara {
     clear: both;
-    width: 940px;
-    height: 1px;
+    width: 100em;
+    height: 10px;
     background-color: #cccccc;
-    margin-top: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     margin-left: 10px;
 }
 
@@ -96,4 +97,13 @@ p.textit {
     line-height: 150%;
     width: 940px;
     margin: 50px 0 0 10px;
+    padding-bottom: 50px;
+}
+
+h1.textit{
+  font-size: 115%;
+  font-weight: 400;
+  line-height: 150%;
+  width: 940px;
+
 }
