@@ -132,7 +132,8 @@ button:hover {
 /* Add padding to container elements */
 .container {
   padding: 0rem 4rem;
-  min-height: 29em;
+  min-height: 21em;
+  height: 100%;
 }
 
 /* Clear floats */
@@ -526,19 +527,19 @@ blockquote:before {display: block;content: "\201c";font: bold 120px "Times New R
 
 
 /* Content */
-#content
+.content
 { text-align:left;
   width:90%;
   padding:0 25px 10px 25px;
   margin:0 auto;  }
   
-#content h2
+.content h2
 { 
   padding:0;
   font-size: 3rem;
   margin:0 auto; }  
 
-#content h3
+.content h3
 {
   background-color:inherit;
   color: #4caf50;
@@ -547,55 +548,55 @@ blockquote:before {display: block;content: "\201c";font: bold 120px "Times New R
   padding:0;
   }
 
-#content span.author
+.content span.author
 { font:normal 8pt Arial,Helvetica,sans-serif;
   background-color:inherit;
   color:#666; }
 
-#content span.author a
+.content span.author a
 { background-color:inherit;
   color:#999;
   text-decoration:none;
   padding:0 3px; }
 
-#content span.author a:hover
+.content span.author a:hover
 { background-color:#690;
   color:#fff; }
 
-#content p a
+.content p a
 { background-color:inherit;
   color:#690;
   text-decoration:underline;  }   
   
-#content p
+.content p
 { text-align:justify;
   line-height:24px; }
 
-#content p.center { text-align: center; }
+.content p.center { text-align: center; }
   
-#content li
+.content li
 { line-height:24px; }
 
-#content li a
+.content li a
 { background-color:inherit;
   color:#690;
   text-decoration:none; }
 
-#content li a:hover
+.content li a:hover
 { text-decoration:underline; }
 
-#content ul {
+.content ul {
   list-style:none;
   padding:0;
 }
   
-#content ul li
+.content ul li
 { list-style-position:inside;
     text-indent: 0px;
   padding-left:20px;
   margin:0; } 
   
-#content ul li:before {
+.content ul li:before {
   content: "\27a1 \00a0 \00a0";
   background-color:inherit;
   color:#690;
@@ -628,6 +629,10 @@ blockquote:before {display: block;content: "\201c";font: bold 120px "Times New R
 .benefit-card{
   position: relative;
   padding: 0;
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-duration: 2s;
+  animation-name: fadeIn;
+  animation-duration: 2s
 }
 .benefit-card > img{
   top: 0;
@@ -641,4 +646,49 @@ blockquote:before {display: block;content: "\201c";font: bold 120px "Times New R
   font-size: 2rem;
   top: 45%;
   left: 42%;
+}
+.benefit-card > p {
+  position: absolute;
+  text-align: center;
+  bottom: 16%;
+  left: 20%;
+}
+
+$dashboard-sidebar-width: 70px;
+$dashboard-header-bg  : white;
+$dashboard-sidebar-bg : #26272b;
+$dashboard-header-height: 40px;
+
+html, 
+body, 
+.dashboard { 
+  height: 100%; 
+  margin: 0; 
+}
+body {
+  background: #e7ebef;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: $dashboard-sidebar-width 1.4fr;
+  grid-template-rows: $dashboard-header-height 2fr;
+  width: 100%;
+  min-height: 100%;
+  grid-template-areas:
+    "sidebar header"
+    "sidebar content";
+  }
+.sidebar { 
+  grid-area: sidebar;
+  background: $dashboard-sidebar-bg;
+  border-right: 1px solid darken($dashboard-sidebar-bg, 4%);
+  box-shadow: 1px 0 20px rgba(0, 0, 0, 0.28);
+}
+.header { 
+  grid-area: header;
+  background: $dashboard-header-bg;
+}
+.content { 
+  grid-area: content;
 }
