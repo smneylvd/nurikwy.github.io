@@ -30,7 +30,7 @@ h4 {
 }
 
 a {
-    color: #e66e0d;
+    color: #4caf50;
 }
 
 p a {
@@ -352,10 +352,10 @@ div.cara {
 	width: 140px;
 	height: 160px;
 	margin: 0 10px 0 10px;
-	background-color: #e66e0d;
+	background-color: #4caf50;
 	float: left;
 	position: relative;
-    }
+	}
 
     .sixths_team a {
 	display: block;

@@ -12,23 +12,23 @@
 <body>
 <!-- navbar start -->
 <div class="topnav mobile-container">
-    <img href="#home" class="logo" src="img/logo.png" alt="logo">
-    <div class="topnav-links">
-        <a class="active" href="index.html">Home</a>
-        <a href="news.html">News</a>
-        <a href="achievements.html">Achievements</a>
-        <a href="about.html">About</a>
-        <a href="req.html">Requisites</a>
-        <div class="userSection">
-            <a class="username" disabled id="username">Username</a>
-            <a id="logOut">Log-Out</a>
-        </div>
-        <a class="authorizeButton" id="showRegister">Sign-up</a>
-        <a class="authorizeButton" id="showLogin">Sign-in</a>
+  <img href="#home" class="logo" src="img/logo.png" alt="logo">
+  <div class="topnav-links">
+    <a class="active" href="index.html">Home</a>
+    <a href="news.html">News</a>
+    <a href="achievements.html">Achievements</a>
+    <a href="about.html">About</a>
+    <a href="req.html">Requisites</a>
+    <div class="userSection">
+      <a class="username" disabled id="username">Username</a>
+      <a id="logOut">Log-Out</a>
     </div>
-    <a class="icon" onclick="toggleCollapse()">
-        <i class="fa fa-bars"></i>
-    </a>
+    <a class="authorizeButton" id="showRegister">Sign-up</a>
+    <a class="authorizeButton" id="showLogin">Sign-in</a>
+  </div>
+  <a class="icon" onclick="toggleCollapse()">
+    <i class="fa fa-bars"></i>
+  </a>
 </div>
 <!-- navbar end -->
 
@@ -152,12 +152,47 @@
         </div>
 
 
+<!-- The Register Modal form start-->
+<form class="authorization modal" id="registerModal" action="" style="border:1px solid #ccc">
+    <div class="authorization modal-content">
+        <span class="close">&times;</span>
+        <h1>Sign Up</h1>
+        <p>Please fill in this form to create an account.</p>
+        <hr>
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="pass" required>
+        <label for="psw-repeat"><b>Repeat Password</b></label>
+        <input type="password" placeholder="Repeat Password" name="pass-repeat" required>
+        <div class="clearfix">
+            <button name="signupbtn" class="signupbtn">Sign Up</button>
+        </div>
+    </div>
+</form>
+<!-- The Register Modal form end-->
+
+<!-- The Login Modal form start -->
+<form class="authorization modal" id="loginModal" action="" style="border:1px solid #ccc">
+    <div class="authorization modal-content">
+        <span class="close">&times;</span>
+        <h1>Sign in</h1>
+        <hr>
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="emaill" required>
+        <label for="pass"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="passl" required>
+        <div class="clearfix">
+            <button name="signinbtn" type="button" class="signupbtn">Sign in</button>
+        </div>
+    </div>
+</form>
+<!-- The Login Modal form end -->
 
 
 
 
-
-
+</div>
 <!-- Footer start -->
 <div class="footer">
 	<div class="contain">

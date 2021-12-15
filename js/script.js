@@ -87,13 +87,18 @@ $(document).ready(function () {
   }
   else {
     persons = JSON.parse(json);
-    console.log(persons);
   }
 });
 
 
 $('button[name="signupbtn"]').on("click",function () {
   let email = $('input[name="email"]').val();
+  for (var i = 0; i < persons.length; i++) {
+    if(persons[i]['email'] == email){
+      alert("Email already taken");
+      return;
+    }
+  }
   let pass = $('input[name="pass"]').val();
   let pass2 = $('input[name="pass-repeat"]').val();
   if (pass != pass2) {
@@ -162,7 +167,7 @@ $(document).ready(function () {
   }
 });
 
-$('#logOut').on("click",function () {
+$('#logOut,logout').on("click",function () {
   window.localStorage.removeItem('currentUser');
   location.reload();  
 });
@@ -170,7 +175,7 @@ $('#logOut').on("click",function () {
 if (document.location.href.match(/[^\/]+$/)[0] === 'admin.html') {
   $(document).ready(function () {
     for (var i = 1; i < persons.length; i++) {
-      let obj = ('<li class="users"><form><a href="#">User 1</a><p>Email: ' + persons[i]["email"]+ '</p><p>Active: ' + persons[i]["active"]+ '</p><button class="btn-red" value="' + persons[i]["email"]+ '" type="button"/>Disable</button><button class="btn-orange" value="' + persons[i]["email"]+ '" type="button"/>Enable</button><button class="btn-red" value="' + persons[i]["email"]+ '" type="button"/>Delete</button></form></li>');
+      let obj = ('<li class="users"><form><a href="#">User ' + i +'</a><p>Email: ' + persons[i]["email"]+ '</p><p>Active: ' + persons[i]["active"]+ '</p><button class="btn-red" value="' + persons[i]["email"]+ '" type="button"/>Disable</button><button class="btn-orange" value="' + persons[i]["email"]+ '" type="button"/>Enable</button><button class="btn-red" value="' + persons[i]["email"]+ '" type="button"/>Delete</button></form></li>');
       $("#users").append(obj);
     }
     $("button").on("click",function () {
