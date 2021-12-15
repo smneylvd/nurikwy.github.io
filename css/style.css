@@ -649,3 +649,11 @@ blockquote:before {display: block;content: "\201c";font: bold 120px "Times New R
   left: 20%;
 }
 
+.userSection {
+  display: none;
+  float: right;
+}
+
+.username:hover {
+  background-color: inherit !important;
+}

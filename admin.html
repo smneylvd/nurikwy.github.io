@@ -15,15 +15,13 @@
   <h1>Admin Panel</h1>
   <ul class="utilities">
     <br>
-    <li class="users"><a href="#">My Account</a></li>
+    <li class="users"><a href="#">Admin</a></li>
     <li class="logout warn"><a href="index.html">Log Out</a></li>
   </ul>
 </header>
 
 <nav role='navigation'>
   <ul class="main">
-    <li class="edit"><a href="#">Edit Website</a></li>
-    <li class="write"><a href="#">Write news</a></li>
     <li class="users"><a href="#">Manage Users</a></li>
   </ul>
 </nav>
@@ -32,46 +30,23 @@
   
   <section class="panel important">
     <h2>Manage users</h2>
-    <ul class="utilities">
-      <li class="users"><a href="#">User 1</a>
-        <p>Name: Some name</p>
-        <p>email: Some mail</p>
-        <button class="btn-red"type="submit"/>Disable</button>
-        <button class="btn-orange"type="submit"/>Enable</button>
-        <button class="btn-red"type="submit"/>Delete</button>
-      </li>
-      <li class="users"><a href="#">User 1</a>
-        <p>Name: Some name</p>
-        <p>email: Some mail</p>
-        <button class="btn-red"type="submit"/>Disable</button>
-        <button class="btn-orange"type="submit"/>Enable</button>
-        <button class="btn-red"type="submit"/>Delete</button>
-      </li>
+    <ul class="utilities" id="users">
+      <!-- <li class="users">
+        <form>
+          
+          <a href="#">User 1</a>
+          <p>Name: Some name</p>
+          <p>email: Some mail</p>
+          <button class="btn-red" value="" type="submit"/>Disable</button>
+          <button class="btn-orange" value="" type="submit"/>Enable</button>
+          <button class="btn-red" value="" type="submit"/>Delete</button>
+        </form>
+      </li> -->
+      
 
     </ul>
   </section>
-  <section class="panel important">
-    <h2>Write Some News</h2>
-    <ul>
-      <li>Information Panel</li>
-    </ul>
-  </section>
-  
-  <section class="panel important">
-    <h2>Write a post</h2>
-      <form action="" method="post">
-        <div class="twothirds">
-          Blog title:<br/>
-          <input type="text" name="title" size="40"/><br/><br/>
-          Content:<br/>    
-          <textarea name="newstext" rows="15" cols="67"></textarea><br/>  
-        </div>
-        <div>
-          <input type="submit" name="submit" value="Save" />
-        </div>
-        </div>
-      </form>
-  </section>
+
 
 </main>
 
