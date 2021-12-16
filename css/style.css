@@ -409,7 +409,7 @@ button:hover {
   margin: 0;
   padding: 0;
 }
-.footer .col ul li {
+.footer .col ul li, .footer a{
   color: #d7d7d7;
   font-size: 14px;
   font-family: inherit;
@@ -436,8 +436,9 @@ li > img:hover {
   padding-right: 5px !important;
 }
 
-.footer .col ul li:hover {
+.footer .col ul li:hover,  .footer a:hover {
   color: #ffffff;
+  text-decoration: none;
   transition: .1s;
   -webkit-transition: .1s;
   -moz-transition: .1s;
@@ -656,4 +657,10 @@ blockquote:before {display: block;content: "\201c";font: bold 120px "Times New R
 
 .username:hover {
   background-color: inherit !important;
+}
+
+.copyright{
+  color: #ffffffa6;
+  margin-top: 2rem;
+  font-size: 0.9rem;
 }

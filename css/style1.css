@@ -210,13 +210,11 @@ div.cara {
 #main_part, #main_part_inner {
     width: 100%;
     height: 465px;
-    background: url('img/main_img_1.jpg') scroll no-repeat center;
-    background-color: #000;
     border-bottom: 7px solid #e5e5e5;
 }
 
 #main_part_in, #main_part_inner_in {
-    width: 960px;
+    width: 80%;
     margin: auto;
 }
 
@@ -247,7 +245,6 @@ div.cara {
 
 		#main_part_inner {
 		    height: 150px;
-		    background: url('img/main_img_1.jpg') scroll no-repeat top center;
 		}
 
 		#main_part_inner_in {
@@ -277,7 +274,7 @@ div.cara {
 }
 
 #content_inner {
-    width: 960px;
+    width: 90%;
     margin: auto;
     padding-top: 0;
 }
@@ -351,7 +348,7 @@ div.cara {
     .sixths_team {
 	width: 140px;
 	height: 160px;
-	margin: 0 10px 0 10px;
+	margin: 0 10px 20px 10px;
 	background-color: #4caf50;
 	float: left;
 	position: relative;
@@ -414,9 +411,8 @@ div.cara {
 
 		.history_blok {
 		    background-color: #1e2022;
-		    width: 855px;
 		    min-height: 100px;
-		    margin: 70px 0 0 10px;
+		    margin-right: 0 !important;
 		    padding: 43px 40px 30px 45px;
 		}
 
@@ -475,16 +471,13 @@ div.cara {
 
 		.moreabout {
 		    background-color: #1e2022;
-		    width: 855px;
 		    min-height: 100px;
 		    padding: 35px 40px 40px 45px;
-		    margin-left: 10px;
-		    margin-bottom: 60px;
 		    border-top: 1px #292b2d solid;
 		}
 
 		.moreabout p {
-		    width: 860px;
+		    width: 100%;
 		    color: #e9ecef;
 		    font-size: 115%;
 		    font-weight: 200;
@@ -636,7 +629,7 @@ p.youlike, p.teamline {
     font-size: 125%;
     font-weight: 400;
     line-height: 150%;
-    width: 940px;
+    width: 100%;
     color: #323536;
     margin: 10px 0 0 10px;
 }

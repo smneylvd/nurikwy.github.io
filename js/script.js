@@ -1,3 +1,5 @@
+
+
 $("#showRegister").on("click",function () {
 	$("#registerModal").css("display","block");
 });
@@ -167,9 +169,14 @@ $(document).ready(function () {
   }
 });
 
-$('#logOut,logout').on("click",function () {
+$('#logOut').on("click",function () {
   window.localStorage.removeItem('currentUser');
   location.reload();  
+});
+
+$('.logout').on("click",function () {
+  window.localStorage.removeItem('currentUser');
+  window.location.href = 'index.html';
 });
 
 if (document.location.href.match(/[^\/]+$/)[0] === 'admin.html') {
